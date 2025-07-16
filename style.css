@@ -815,3 +815,38 @@ footer .social-links a:hover {
     font-size: 28px;
   }
 }
+
+/* Adding specific styles for the new skills section */
+.skills-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.skill-category-card {
+  background: #2A2A3E;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid #3A3A5A;
+}
+.skill-category-card h3 {
+  font-size: 22px;
+  color: #A29BFE;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3A3A5A;
+  padding-bottom: 10px;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill-tag {
+  background-color: #3A3A5A;
+  color: #E0E0E0;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
