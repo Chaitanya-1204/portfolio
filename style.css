@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left; /* Left aligned as in reference */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 60px; /* Gap between text and image */
   min-height: 80vh; /* Take up most of the viewport height */
 }
