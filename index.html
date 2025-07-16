@@ -3,90 +3,243 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Ankur Kothawade - Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
   <nav class="navbar">
     <div class="navbar-container">
-      <div class="navbar-brand">Portfolio</div>
+      <div class="navbar-brand">Ankur.dev</div>
       <ul class="nav-links">
         <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#about" class="nav-link">About me</a></li>
+        <li><a href="#skills" class="nav-link">My Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact me</a></li>
       </ul>
     </div>
   </nav>
 
-   <section id="about" class="section about">
-    <img src="ankur.jpg" alt="Profile Image"/>
-    <div class="about-content">
-      <h2>Hi there!</h2>
-      <p>
-        Fuelled by a passion for designing compelling products, I have a deep desire
-        to excel and continuously improve in my work. Learn more about my journey below.
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <p class="greeting">Hi, I am</p>
+      <h1>Chaitanya Patil</h1>
+      <p class="tagline">
+        I'm a software developer specializing in building robust applications, with expertise in iOS app development and IoT connected appliances. I'm focused on creating compelling products and continuously improving my work.
       </p>
-      <a href="ankur_resume.pdf" download class="btn">Download CV</a>
+      <div class="hero-buttons">
+        <a href="ankur_resume.pdf" download class="btn btn-primary">Download CV</a>
+        <a href="#projects" class="btn btn-secondary">Start Project</a>
+      </div>
+    </div>
+    <div class="hero-image-container">
+      <img src="https://placehold.co/400x400/2A2A3E/FFFFFF?text=Your+Photo" alt="Profile Image of Ankur Kothawade"/>
+      <!-- For the jagged edge effect, you would typically use an SVG mask or clip-path property in CSS.
+           This is a placeholder image. -->
     </div>
   </section>
 
-<section id="projects" class="section">
-  <h2 class="project-header">PROJECTS</h2>
-  <div class="grid project-grid">
-    <!-- Add as many of these cards as you like -->
-    <a href="project1.html" class="project-card">
-      <img src="chatbot.png" alt="NLP" />
-      <h3>Sentiment Analyzer</h3>
-      <p>NLP tool to analyze emotions from user text input.</p>
-    </a>
+  <section id="about" class="section about">
+    <h2>About me</h2>
+    <div class="about-content">
+      <p>
+        Ankur Kothawade is a passionate and results-driven Software Developer with expertise in iOS app development and IoT connected appliances. I am currently working at Whirlpool Corporation, where I have gained significant experience in enhancing app stability, user experience, and overall performance.
+      </p>
+      <p>
+        My journey includes implementing new features, resolving complex bugs, and leading cross-functional initiatives to deliver impactful app functionalities. I am skilled in various iOS frameworks, reactive programming (RxSwift), and optimizing development processes through automation. I have a deep desire to excel and continuously improve in my work, always seeking new challenges and opportunities to grow.
+      </p>
+    </div>
+  </section>
 
-    <a href="project2.html" class="project-card">
-      <img src="chatbot.png" alt="Chatbot" />
-      <h3>Chatbot</h3>
-      <p>Conversational AI agent trained on domain-specific data.</p>
-    </a>
+  <section id="skills" class="section skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <h3>Swift</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 90%;"></div>
+        </div>
+        <span class="skill-level">Level: Advanced</span>
+      </div>
+      <div class="skill-item">
+        <h3>RxSwift</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 85%;"></div>
+        </div>
+        <span class="skill-level">Level: Advanced</span>
+      </div>
+      <div class="skill-item">
+        <h3>MVVM</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 90%;"></div>
+        </div>
+        <span class="skill-level">Level: Advanced</span>
+      </div>
+      <div class="skill-item">
+        <h3>UIKit</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 95%;"></div>
+        </div>
+        <span class="skill-level">Level: Expert</span>
+      </div>
+      <div class="skill-item">
+        <h3>Git & GitHub</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 80%;"></div>
+        </div>
+        <span class="skill-level">Level: Intermediate</span>
+      </div>
+      <div class="skill-item">
+        <h3>IoT Connectivity</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: 75%;"></div>
+        </div>
+        <span class="skill-level">Level: Intermediate</span>
+      </div>
+    </div>
+    <!-- Placeholder for the network/brain graphic. This would typically be an SVG or Canvas animation. -->
+    <div class="skill-graphic-placeholder">
+      <i class="fas fa-brain"></i>
+      <p>Complex skills visualized through a network graph</p>
+    </div>
+  </section>
 
-    <a href="project3.html" class="project-card">
-      <img src="chatbot.png" alt="Summarizer" />
-      <h3>Text Summarizer</h3>
-      <p>Tool to compress lengthy content into concise summaries.</p>
-    </a>
+  <section id="experience" class="section experience-section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Associate Software Developer</h3>
+          <p class="company">Whirlpool Corporation</p>
+          <p class="duration">August 2023 - Present | Pune, India</p>
+          <ul>
+            <li>Implemented 10+ new features and resolved over 50+ bugs, enhancing app stability and user experience.</li>
+            <li>Integrated connectivity for two appliances by parsing appliance JSON capability in the Maytag brand app.</li>
+            <li>Spearheaded a cross-functional team to build and release a key app feature contributing to a 60% increase in user engagement.</li>
+            <li>Improved the app quality by 10% through code reviews, writing unit tests and collaborating with QA team.</li>
+            <li>Resolved critical memory leaks, ensuring smooth app performance and improving speed by 15%.</li>
+            <li>Created reusable modules, resulting in a 20% decrease in code redundancy.</li>
+            <li>Improved the app deployment manual process using Jenkins pipeline ensuring decreased in build time by 30%.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Software Developer Intern</h3>
+          <p class="company">Whirlpool Corporation</p>
+          <p class="duration">January 2023 - June 2023 | Pune, India</p>
+          <ul>
+            <li>Received training in iOS app development and IoT connected appliances domain.</li>
+            <li>Contributed to the development of two new features and addressed bugs for the Consul brand app.</li>
+            <li>Led development of 2 Proof of Concepts, innovating voice integration and Bluetooth connectivity.</li>
+            <li>Enhanced user experience by adding Siri support in Maytag brand app through App Intents framework.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Cadence Mobility Solutions - Freelance Project</h3>
+          <p class="company">iOS Application Development</p>
+          <p class="duration">2019-2023</p>
+          <ul>
+            <li>Developed an iOS application for a client in the mobility industry as a freelance project.</li>
+            <li>Delivered an e-commerce platform, integrating login OTP, electric cycle functionality, and robust API support.</li>
+            <li>Utilized Firebase and Kingfisher third-party libraries for enhanced functionality.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-     <a href="project2.html" class="project-card">
-      <img src="chatbot.png" alt="Chatbot" />
-      <h3>Chatbot</h3>
-      <p>Conversational AI agent trained on domain-specific data.</p>
-    </a>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <a href="project1.html" class="project-card">
+        <div class="project-image-wrapper">
+          <img src="https://placehold.co/300x200/2A2A3E/FFFFFF?text=Sentiment+Analyzer" alt="Sentiment Analyzer Thumbnail" />
+        </div>
+        <h3>Sentiment Analyzer</h3>
+        <p>NLP tool to analyze emotions from user text input.</p>
+      </a>
 
-    <a href="project3.html" class="project-card">
-      <img src="chatbot.png" alt="Summarizer" />
-      <h3>Text Summarizer</h3>
-      <p>Tool to compress lengthy content into concise summaries.</p>
-    </a>
+      <a href="project2.html" class="project-card">
+        <div class="project-image-wrapper">
+          <img src="https://placehold.co/300x200/2A2A3E/FFFFFF?text=Chatbot" alt="Chatbot Thumbnail" />
+        </div>
+        <h3>Conversational AI Chatbot</h3>
+        <p>AI agent trained on domain-specific data for support.</p>
+      </a>
 
-    <!-- Just keep adding more cards -->
-  </div>
-</section>
+      <a href="project3.html" class="project-card">
+        <div class="project-image-wrapper">
+          <img src="https://placehold.co/300x200/2A2A3E/FFFFFF?text=Text+Summarizer" alt="Text Summarizer Thumbnail" />
+        </div>
+        <h3>Text Summarizer</h3>
+        <p>Tool to compress lengthy content into concise summaries.</p>
+      </a>
 
- <section id="education" class="section education-section">
-  <h2>Education</h2>
-  <div class="edu-item">
-    <h3>BTech in Computer Science & Engineering (AI)</h3>
-    <p><strong>MIT ADT University</strong> — CGPA: 9.0</p>
-    <p>2019 - 2023 | Pune, India</p>
-  </div>
-  <div class="edu-item">
-    <h3>Coursework Highlights</h3>
-    <ul>
-      <li>Machine Learning & Deep Learning</li>
-      <li>Natural Language Processing</li>
-      <li>AI Planning & Reasoning</li>
-      <li>Cloud Computing</li>
-    </ul>
-  </div>
-</section>
+      <a href="project4.html" class="project-card">
+        <div class="project-image-wrapper">
+          <img src="https://placehold.co/300x200/2A2A3E/FFFFFF?text=Weather+App" alt="Weather App Thumbnail" />
+        </div>
+        <h3>Weather Forecast App</h3>
+        <p>iOS Weather app integrating real-time OpenWeatherMap API.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="education" class="section education-section">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <h3>BTech in Computer Science, MIT ADT University</h3>
+      <p class="duration">2019 - 2023 | Pune, India</p>
+      <p class="cgpa"><strong>CGPA: 9.0</strong></p>
+      <ul class="coursework-highlights">
+        <li>Data Structures</li>
+        <li>Algorithms</li>
+        <li>Object Oriented Programming</li>
+        <li>Operating System</li>
+        <li>Machine Learning & Deep Learning</li>
+        <li>Natural Language Processing</li>
+        <li>AI Planning & Reasoning</li>
+        <li>Cloud Computing</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <h2>Let's connect!</h2>
+    <p>Feel free to reach out for collaborations, opportunities, or just a chat.</p>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> kothawade09@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 9978247319</p>
+      <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+    </div>
+    <div class="social-links-large">
+      <a href="https://linkedin.com/in/ankur-kothawade" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/ankur-kothawade" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Ankur Kothawade. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/ankur-kothawade" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ankur-kothawade" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:kothawade09@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

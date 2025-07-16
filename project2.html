@@ -3,29 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Project Details</title>
+  <title>Chatbot - Project Details</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
   <nav class="navbar">
     <div class="navbar-container">
-      <div class="logo"><strong>Project Portfolio</strong></div>
+      <div class="navbar-brand">Ankur.dev</div>
       <ul class="nav-links">
         <li><a href="index.html#home" class="nav-link">Home</a></li>
-        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#about" class="nav-link">About me</a></li>
+        <li><a href="index.html#skills" class="nav-link">My Skills</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
         <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
         <li><a href="index.html#education" class="nav-link">Education</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact me</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="section">
-    <h2>Project Title</h2>
-    <p>Detailed description of the project. Include features, stack, purpose, and performance.</p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername/project" target="_blank">GitHub Link</a></p>
-    <p><strong>Live Code:</strong> <a href="https://example.com/project" target="_blank">Live Demo</a></p>
+  <div class="section project-detail-section">
+    <h2>Conversational AI Chatbot</h2>
+    <p>This project features a **conversational AI agent** specifically trained on domain-specific data. The chatbot is designed to provide automated customer support, answer frequently asked questions, and guide users through processes, thereby enhancing user experience and reducing the need for human intervention.</p>
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>**Domain-Specific Knowledge:** Trained on a custom dataset to provide accurate and relevant responses within a particular industry or topic.</li>
+      <li>**Natural Language Understanding (NLU):** Capable of understanding user intent and extracting key entities from conversational input.</li>
+      <li>**Context Management:** Maintains conversation context to provide coherent and continuous interactions.</li>
+      <li>**Integration Capabilities:** Designed for easy integration with various platforms (web, mobile apps, messaging services).</li>
+    </ul>
+    <p><strong>Technology Stack:</strong></p>
+    <ul>
+      <li>**Framework:** Rasa / Dialogflow / Microsoft Bot Framework</li>
+      <li>**Backend:** Python (for Rasa or custom logic)</li>
+      <li>**Database:** PostgreSQL / MongoDB (for conversation logs or knowledge base)</li>
+      <li>**Deployment:** Docker, Kubernetes (for scalable deployment)</li>
+    </ul>
+    <p><strong>Purpose & Performance:</strong></p>
+    <p>The primary purpose of this chatbot is to automate routine interactions, improve response times, and provide 24/7 support. Performance is measured by its accuracy in intent recognition, completeness of responses, and user satisfaction. It aims for a high resolution rate for common queries and a seamless handover to human agents when necessary.</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername/domain-chatbot" target="_blank">https://github.com/yourusername/domain-chatbot</a></p>
+    <p><strong>Live Demo:</strong> <a href="https://example.com/chatbot-demo" target="_blank">https://example.com/chatbot-demo</a></p>
   </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Ankur Kothawade. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/ankur-kothawade" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ankur-kothawade" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:kothawade09@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

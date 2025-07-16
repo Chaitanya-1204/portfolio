@@ -3,29 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Project Details</title>
+  <title>Sentiment Analyzer - Project Details</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
   <nav class="navbar">
     <div class="navbar-container">
-      <div class="logo"><strong>Project Portfolio</strong></div>
+      <div class="navbar-brand">Ankur.dev</div>
       <ul class="nav-links">
         <li><a href="index.html#home" class="nav-link">Home</a></li>
-        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#about" class="nav-link">About me</a></li>
+        <li><a href="index.html#skills" class="nav-link">My Skills</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
         <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
         <li><a href="index.html#education" class="nav-link">Education</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact me</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="section">
-    <h2>Project Title</h2>
-    <p>Detailed description of the project. Include features, stack, purpose, and performance.</p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername/project" target="_blank">GitHub Link</a></p>
-    <p><strong>Live Code:</strong> <a href="https://example.com/project" target="_blank">Live Demo</a></p>
+  <div class="section project-detail-section">
+    <h2>Sentiment Analyzer</h2>
+    <p>This project is an **NLP tool** designed to analyze emotions from user text input. It leverages machine learning models to classify text into various sentiment categories, providing insights into the emotional tone of written content.</p>
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>**Real-time Analysis:** Processes text input instantly to display sentiment scores.</li>
+      <li>**Multi-label Classification:** Identifies multiple emotions (e.g., joy, sadness, anger, surprise) within a single text.</li>
+      <li>**Interactive Interface:** A user-friendly web interface for easy text submission and result visualization.</li>
+    </ul>
+    <p><strong>Technology Stack:</strong></p>
+    <ul>
+      <li>**Backend:** Python with Flask/Django</li>
+      <li>**NLP Library:** spaCy / NLTK / Hugging Face Transformers</li>
+      <li>**Machine Learning:** Scikit-learn (for traditional ML models) or PyTorch/TensorFlow (for deep learning models)</li>
+      <li>**Frontend:** HTML, CSS, JavaScript (potentially with a framework like React or Vue.js for complex UIs)</li>
+    </ul>
+    <p><strong>Purpose & Performance:</strong></p>
+    <p>The Sentiment Analyzer was developed to demonstrate practical application of NLP in understanding human emotion from text. It aims to be highly accurate and scalable, capable of handling large volumes of text data efficiently. Performance metrics include high precision and recall in sentiment classification, and low latency for real-time processing.</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername/sentiment-analyzer" target="_blank">https://github.com/yourusername/sentiment-analyzer</a></p>
+    <p><strong>Live Demo:</strong> <a href="https://example.com/sentiment-analyzer-demo" target="_blank">https://example.com/sentiment-analyzer-demo</a></p>
   </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Ankur Kothawade. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/ankur-kothawade" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ankur-kothawade" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:kothawade09@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
